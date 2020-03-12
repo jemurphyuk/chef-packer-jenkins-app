@@ -1,7 +1,7 @@
 {
   "variables": {
-    "aws_access_key": "{{env `ACCESS`}}",
-    "aws_secret_key": "{{env `_ _ _`}}",
+    "aws_access_key": "{{env `AWS_ACCESS_KEY_ID`}}",
+    "aws_secret_key": "{{env `AWS_SECRET_ACCESS_KEY`}}",
     "version": "{{env `GIT_TAG_NAME`}}"
   },
   "builders": [{
