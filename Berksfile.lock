@@ -1,0 +1,28 @@
+DEPENDENCIES
+  mongodb_cookbook
+    git: git@github.com:jemurphyuk/chef-cookbook-mongodb-intro.git
+    revision: b87f6539def05dbbc1b35f1579b1c54ab542d7ee
+  node_cookbook
+    git: git@github.com:jemurphyuk/chef-cookbook-introduction.git
+    revision: fc57a9e989cd3efdb663f312b84ec16eeebb1c2e
+
+GRAPH
+  apt (7.2.0)
+  ark (5.0.0)
+    seven_zip (>= 0.0.0)
+  build-essential (8.2.1)
+    mingw (>= 1.1)
+    seven_zip (>= 0.0.0)
+  mingw (2.1.0)
+    seven_zip (>= 0.0.0)
+  mongodb_cookbook (0.1.0)
+    apt (>= 0.0.0)
+  node_cookbook (0.1.0)
+    apt (>= 0.0.0)
+    nodejs (~> 5.0.0)
+  nodejs (5.0.0)
+    ark (>= 2.0.2)
+    build-essential (>= 0.0.0)
+  seven_zip (3.1.2)
+    windows (>= 0.0.0)
+  windows (6.0.1)

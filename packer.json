@@ -26,7 +26,7 @@
     },
     "instance_type": "t2.micro",
     "ssh_username": "ubuntu",
-    "ami_name": "james-murphy-eng53-nodejs-ami-{{user `version`}}"
+    "ami_name": "james-murphy-eng53-nodejs-ami2-{{user `version`}}"
   }],
   "provisioners": [{
     "type": "chef-solo",
@@ -41,9 +41,5 @@
     "type": "file",
     "source": "app/",
     "destination": "/home/ubuntu/app"
-  },
-  {
-    "type": "shell",
-    "inline": ["cd /home/ubuntu/app","sudo npm install"]
   }]
 }
